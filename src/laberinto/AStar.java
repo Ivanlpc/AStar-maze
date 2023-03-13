@@ -78,7 +78,7 @@ public class AStar {
      * @param n Node to calculate the heuristic value
      * @return the manhattan distance between the given Node and the Final Node
      */
-    public int heuristic(Node n) {
+    private int heuristic(Node n) {
         return Math.abs(maze.getEnd().getX() - n.getX()) + Math.abs(maze.getEnd().getY() - n.getY());
     }
 
@@ -117,7 +117,7 @@ public class AStar {
      @param n the node to start writing the path from
      @return the updated Maze object with the path written on it
      */
-    public Maze write_path(Node n) {
+    private Maze write_path(Node n) {
         Node parent = n.getParent();
         while (!parent.equals(maze.getStart())) {
             maze.setPath(parent, pathChar);
