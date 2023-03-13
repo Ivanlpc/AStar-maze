@@ -21,6 +21,7 @@ public class Main {
      * @param args an array of command-line arguments that are not used in this program
      */
     public static void main(String[] args) {
+        long ms = System.currentTimeMillis();
         Maze maze = new Maze(ROWS, COLUMNS, OBS_PERCENTAGE, OBS_CHAR);
         AStar path = new AStar(maze, PATH_CHAR);
         Maze ans = path.find();
@@ -30,5 +31,6 @@ public class Main {
         } else {
             ans.show();
         }
+        System.out.println("Solved in: "+ (System.currentTimeMillis() - ms) + " ms");
     }
 }
