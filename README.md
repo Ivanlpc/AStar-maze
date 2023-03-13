@@ -14,7 +14,7 @@ git clone https://github.com/ivanlpc/AStar-maze
 
 To run the program, navigate to the `src` directory and run the following command:
 
-```
+```bash
 javac laberinto/Main.java
 java laberinto/Main
 ```
