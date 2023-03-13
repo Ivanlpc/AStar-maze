@@ -111,7 +111,7 @@ public class Maze {
             System.out.println();
         }
         for(int i = 0 ; i < columns + 2; i++) {
-            System.out.print("¯");
+            System.out.print("͞");
         }
         System.out.println();
     }
