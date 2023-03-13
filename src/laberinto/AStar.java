@@ -43,8 +43,8 @@ public class AStar {
      * @return the maze with the shortest path marked, or null if no path is found
      */
     public Maze find() {
-        int gActual = 0;
-        maze.getStart().setG(gActual);
+        int starting_g = 0;
+        maze.getStart().setG(starting_g);
         maze.getStart().setH(0);
         openSet.add(maze.getStart());
         while (!openSet.isEmpty()) {
